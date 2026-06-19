@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YASU & YISMA 🎀</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #fdf2f8 0%, #fef9c3 33%, #dbeafe 66%, #f3e8ff 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .note-item {
+            animation: fadeIn 0.5s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body class="text-purple-900">
+    <nav class="flex justify-between items-center py-6 px-8 md:px-20">
+        <div class="text-3xl font-bold tracking-tight text-purple-950 flex items-center gap-2">
+            <span>✨</span> YASU & YISMA
+        </div>
+        <div class="space-x-6 text-sm font-semibold text-purple-700 bg-white/50 px-6 py-2 rounded-full shadow-sm">
+            <a href="#about" class="hover:text-pink-500 transition">Sobre nosotras</a>
+            <a href="#music" class="hover:text-pink-500 transition">Música</a>
+            <a href="#photos" class="hover:text-pink-500 transition">Fotos</a>
+            <a href="#notes" class="hover:text-pink-500 transition">Notas</a>
+        </div>
+    </nav>
+
+    <header class="py-16 px-8 md:px-20 text-center">
+        <h1 class="text-6xl md:text-8xl font-bold mb-6 text-purple-950 drop-shadow-sm">¡Hola! ✨</h1>
+        <p class="text-xl md:text-2xl text-purple-800 max-w-2xl mx-auto font-medium">
+            Un espacio mágico hecho con mucho cariño para YASU & YISMA.
+        </p>
+    </header>
+
+    <section id="about" class="py-10 px-8 md:px-20">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center glass-card p-8 rounded-[2rem] shadow-xl">
+            <div class="bg-yellow-200 h-64 rounded-[2rem] flex items-center justify-center border-4 border-white shadow-inner transform -rotate-2">
+                <span class="text-yellow-700 font-bold text-lg">Foto de YASU & YISMA ✨</span>
+            </div>
+            <div>
+                <h2 class="text-4xl font-bold mb-4 text-purple-950">Nuestra historia</h2>
+                <p class="text-purple-800 mb-6 leading-relaxed text-lg">
+                    Creamos este rincón para guardar nuestras memorias, canciones favoritas y todo lo que nos hace reír. ¡Gracias por estar en mi vida!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="music" class="py-16 px-8 md:px-20">
+        <h2 class="text-3xl font-bold mb-10 text-center text-purple-950">Nuestra Playlist 🎶</h2>
+        <div class="max-w-2xl mx-auto bg-purple-200/60 glass-card p-8 rounded-[2rem] border border-purple-100 shadow-lg flex items-center gap-6">
+            <div class="w-24 h-24 bg-purple-400 rounded-[2rem] flex items-center justify-center text-white text-4xl shadow-inner">🎵</div>
+            <div>
+                <h3 class="font-bold text-xl text-purple-950">Canciones que nos encantan</h3>
+                <p class="text-purple-800 text-sm mt-1">Una selección especial para nuestros momentos.</p>
+                <button class="mt-4 bg-white text-purple-900 px-6 py-2 rounded-full text-sm font-bold shadow-md hover:scale-105 transition">Escuchar ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos" class="py-16 px-8 md:px-20">
+        <h2 class="text-3xl font-bold mb-10 text-center text-purple-950">Mural de Fotos 📸</h2>
+        
+        <h3 class="text-xl font-bold mb-4 text-purple-800 ml-4">📸 Fotos de YASU</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mb-12">
+            <div class="bg-sky-200 aspect-square rounded-[2rem] shadow-md hover:rotate-3 transition duration-300"></div>
+            <div class="bg-sky-200 aspect-square rounded-[2rem] shadow-md hover:-rotate-3 transition duration-300"></div>
+        </div>
+
+        <h3 class="text-xl font-bold mb-4 text-purple-800 ml-4">📸 Fotos de YISMA</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mb-12">
+            <div class="bg-pink-200 aspect-square rounded-[2rem] shadow-md hover:rotate-3 transition duration-300"></div>
+            <div class="bg-pink-200 aspect-square rounded-[2rem] shadow-md hover:-rotate-3 transition duration-300"></div>
+        </div>
+
+        <h3 class="text-xl font-bold mb-4 text-purple-800 ml-4">📸 Fotos de Ambos</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            <div class="bg-yellow-200 aspect-square rounded-[2rem] shadow-md hover:rotate-3 transition duration-300"></div>
+            <div class="bg-yellow-200 aspect-square rounded-[2rem] shadow-md hover:-rotate-3 transition duration-300"></div>
+        </div>
+    </section>
+
+    <section id="notes" class="py-16 px-8 md:px-20 mb-20">
+        <h2 class="text-3xl font-bold mb-10 text-center text-purple-950">Pared de Notas 💌</h2>
+        <div class="max-w-3xl mx-auto glass-card p-10 rounded-[2rem] border-2 border-dashed border-sky-300 shadow-xl text-center">
+            <p class="text-purple-800 mb-6 italic text-lg">"Escribe aquí algo lindo para nosotras..."</p>
+            <textarea id="noteInput" class="w-full h-32 p-4 rounded-[1.5rem] bg-white/50 border border-sky-100 focus:outline-none focus:ring-4 focus:ring-sky-200 mb-6" placeholder="Escribe tu mensaje..."></textarea>
+            <button id="addNoteBtn" class="bg-sky-400 text-white px-10 py-4 rounded-full font-bold hover:bg-sky-500 transition shadow-lg text-lg">Publicar nota ✨</button>
+            
+            <div id="notesContainer" class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                <!-- Notes will appear here -->
+            </div>
+        </div>
+    </section>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, collection, addDoc, onSnapshot, query } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'yasu-yisma-app';
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+        const authToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const auth = getAuth(app);
+
+        async function initAuth() {
+            if (authToken) {
+                await signInWithCustomToken(auth, authToken);
+            } else {
+                await signInAnonymously(auth);
+            }
+        }
+
+        const notesRef = collection(db, 'artifacts', appId, 'public', 'data', 'notes');
+
+        const input = document.getElementById('noteInput');
+        const button = document.getElementById('addNoteBtn');
+        const container = document.getElementById('notesContainer');
+
+        button.addEventListener('click', async () => {
+            const text = input.value.trim();
+            if (text === "") return;
+
+            try {
+                await addDoc(notesRef, {
+                    text: text,
+                    timestamp: Date.now()
+                });
+                input.value = "";
+            } catch (e) {
+                console.error("Error adding note: ", e);
+            }
+        });
+
+        onSnapshot(query(notesRef), (snapshot) => {
+            container.innerHTML = "";
+            snapshot.forEach((doc) => {
+                const data = doc.data();
+                const note = document.createElement('div');
+                note.className = 'note-item bg-white/80 p-4 rounded-2xl shadow-sm border border-sky-100';
+                note.innerHTML = `<p class="text-purple-900">${data.text}</p>`;
+                container.appendChild(note);
+            });
+        }, (error) => {
+            console.error("Snapshot error: ", error);
+        });
+
+        initAuth();
+    </script>
+</body>
+</html>
